@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaustubh's TypeTasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Type<span>Tasks</span></h1>
+    <p class="sub">A type-safe task tracker by Kaustubh</p>
+    <form id="add-form" class="add">
+      <input id="title" type="text" placeholder="What needs doing?" autocomplete="off" required>
+      <button type="submit">Add</button>
+    </form>
+    <div id="filters" class="filters" role="group" aria-label="Filter tasks">
+      <button type="button" data-filter="all" class="chip active">all</button>
+      <button type="button" data-filter="todo" class="chip">todo</button>
+      <button type="button" data-filter="in-progress" class="chip">in-progress</button>
+      <button type="button" data-filter="done" class="chip">done</button>
+    </div>
+    <ul id="task-list" class="list"></ul>
+    <p id="summary" class="summary"></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
